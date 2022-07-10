@@ -1,8 +1,8 @@
-FROM node:14-alpine
+# FROM node:14-alpine
 
-ADD ./node_modules.tar.gz ./
-COPY . ./
+# ADD ./node_modules.tar.gz ./
+# COPY . ./
 
-EXPOSE 3001
+# EXPOSE 3001
 
-ENTRYPOINT ["npm", "start"]
+# ENTRYPOINT ["npm", "start"]
