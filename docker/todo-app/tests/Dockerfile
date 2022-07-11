@@ -1,5 +1,6 @@
-# FROM mjgargani/puppeteer:trybe1.0
-# ADD ./node_modules.tar.gz ./
-# COPY ./ ./
-# EXPOSE 3002:80
-# ENTRYPOINT ["npm", "test"]
+FROM mjgargani/puppeteer:trybe1.0
+WORKDIR /app
+ADD ./node_modules.tar.gz ./
+EXPOSE 3002
+COPY . .
+ENTRYPOINT ["npm", "test"]
